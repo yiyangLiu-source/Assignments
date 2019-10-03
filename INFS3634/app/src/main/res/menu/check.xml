@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/check_cn"
+            android:title="@string/cn"
+            android:checked="true" />
+        <item
+            android:id="@+id/check_us"
+            android:title="@string/us"
+            android:checked="true"/>
+        <item
+            android:id="@+id/check_ru"
+            android:title="@string/ru"
+            android:checked="true"/>
+        <item
+            android:id="@+id/check_kr"
+            android:title="@string/kr"
+            android:checked="true"/>
+        <item
+            android:id="@+id/check_jp"
+            android:title="@string/jp"
+            android:checked="true"/>
+    </group>
+</menu>

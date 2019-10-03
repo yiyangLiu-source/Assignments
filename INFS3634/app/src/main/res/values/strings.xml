@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">INFS3634</string>
+
+    <string name="cn">China/Shanghai</string>
+    <string name="us">America/New_York</string>
+    <string name="ru">Russia/Moscow</string>
+    <string name="kr">Korea/Seoul</string>
+    <string name="jp">Japan/Tokyo</string>
+</resources>
