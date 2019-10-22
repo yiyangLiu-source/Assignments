@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Order</string>
+
+    <string name="food_name">name</string>
+    <string name="food_description">description</string>
+    <string name="food_cost">cost</string>
+    <string name="food_count">0</string>
+
+    <string name="food0list_view0order">view order</string>
+
+    <string name="order_pay">pay</string>
+</resources>

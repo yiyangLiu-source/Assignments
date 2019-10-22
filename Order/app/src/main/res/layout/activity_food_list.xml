@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".FoodListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_view_order"/>
+
+
+    <ImageView
+        android:id="@+id/iv_ic_order"
+        android:src="@mipmap/food0list_ic_order"
+        android:background="@drawable/shape_tlbl0rect25_orange0light"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:background="@color/colorGrayLight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/iv_ic_order"
+        android:layout_toStartOf="@id/btn_view_order"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="$"
+            android:textSize="10sp"
+            android:textColor="@color/colorBrown"
+            android:textStyle="bold"
+            android:background="@drawable/border_rect5_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/tv_total_cost"
+            android:text="0.00"
+            android:textSize="24sp"
+            android:textColor="@color/colorRed"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:text="dollars"
+            android:textSize="10sp"
+            android:textColor="@color/colorBrown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:onClick="clickBtnViewOrder"
+        android:id="@+id/btn_view_order"
+        android:text="@string/food0list_view0order"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ripple_trbr0rect25_primary"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>
